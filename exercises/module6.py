@@ -23,14 +23,11 @@
 
 # print(random.randint(1,6))
 
-# import mylib19
 
-from mypkg19 import mylib19
+import module5
+from module5 import grocery
 
 order = 400
-discount, tax = mylib19.grocery(order)
+discount, tax = module5.grocery(order)
 print("The discount is ${:0.2f}".format(discount))
 print("The tax is ${:0.2f}".format(tax))
-
-
-

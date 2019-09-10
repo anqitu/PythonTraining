@@ -1,0 +1,4 @@
+Chinese	50	8
+English	200	10
+Math	80	12
+Science	80	12

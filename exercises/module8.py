@@ -50,7 +50,7 @@
 # rect3 = Rectangle(13,33)
 # rect3.area()
 
-# Challenge: Class 
+# Challenge: Class
 # class Employee():
 
 # 	empCount = 0
@@ -101,7 +101,7 @@
 
 # 	def dispEmpCount(self):
 # 		print("Employee count is ",Employee.empCount)
-		
+
 # 	def dispEmpDetail(self):
 # 		print("{} salary is ${}".format(self.name,self.salary))
 
@@ -139,51 +139,48 @@
 
 
 # Polymerism
-# class Animal():
+class Animal():
 
-# 	type = "animal"
+	# type = "animal"
 
-# 	# color = "white"
-# 	# legs = 4
+	# color = "white"
+	# legs = 4
 
-# 	def __init__(self,color,legs):
-# 		self.color = color
-# 		self.legs = legs
+	def __init__(self,color,legs):
+		self.color = color
+		self.legs = legs
 
-# 	# def __del__(self):
-# 	# 	print("i am destroyed")
+	# def __del__(self):
+	# 	print("i am destroyed")
 
-# 	def talk(self):
-# 		print("talk like an animal")
+	def talk(self):
+		print("talk like an animal")
 
-# class Dog(Animal):
+class Dog(Animal):
 
-# 	def __init__(self,color,name):
-# 		super().__init__(color,4)
-# 		self.name = name
-	
-# 	def talk(self):
-# 		print("{} woof woof woof".format(self.name))
+	def __init__(self,color,name):
+		super().__init__(color,4)
+		self.name = name
 
-# class Cat(Animal):
+	def talk(self):
+		print("{} woof woof woof".format(self.name))
 
-# 	def __init__(self,color,name):
-# 		super().__init__(color,4)
-# 		self.name = name
-	
-# 	def talk(self):
-# 		print("{} meow meow meow".format(self.name))
+class Cat(Animal):
 
-# d1 = Dog("white","ally")
-# c1 = Cat("black","belinda")
+	def __init__(self,color,name):
+		super().__init__(color,4)
+		self.name = name
 
-# def sound(any):
-# 	any.talk()
+	def talk(self):
+		print("{} meow meow meow".format(self.name))
 
-# sound(d1)
-# sound(c1)
-	
+a1 = Animal('blue', 'amy')
+d1 = Dog("white","ally")
+c1 = Cat("black","belinda")
 
+def sound(any):
+	any.talk()
 
-
-
+sound(d1)
+sound(c1)
+sound(a1)

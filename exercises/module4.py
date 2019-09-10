@@ -100,8 +100,7 @@
 # for n in range(1,101):
 # 	for divisor in range(2, n):
 # 		if n%divisor == 0:break
-# 	else: 
+# 	else:
 # 		primes.append(n)
 
 # print(primes)
-
